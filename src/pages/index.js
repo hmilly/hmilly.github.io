@@ -5,6 +5,8 @@ import { GlobalStyles } from "../styles/Global"
 import GridItem from "../components/GridItem";
 import games from "../images/games.jpg"
 import menu from "../images/menu.jpg"
+import bank from "../images/bank.jpg"
+// import weather from "../images/weather.jpg"
 import git from "../images/git.jpg"
 import lin from "../images/lin.jpg"
 
@@ -35,28 +37,26 @@ const IndexPage = () => {
         <GridItem
           name={"Menu"}
           link={`${url}recipes-book/`}
-          description={"A project for a fake burger website."}
+          description={"Burger website with the ability to order."}
           image={menu}
         />
         <GridItem
           name={"Game centre"}
           link={`${url}game-center/`}
-          description={"Games created using React and TS"}
+          description={"Games website, created using React and TS"}
           image={games}
         />
-
-
-        <GridItem
+        {/* <GridItem
           name={"Weather app"}
           link={`${url}weather/`}
-          description={"Weather app using API for locations"}
-          image={games}
-        />
+          description={"Weather app using API for locations - awaiting db upload"}
+          image={weather}
+        /> */}
         <GridItem
           name={"Bank app"}
-          link={`${url}react-bank-app/`}
-          description={"Banking app. Use 'lady' for user&pword"}
-          image={games}
+          link={`${url}bank/`}
+          description={"Banking app - awaiting db upload"}
+          image={bank}
         />
 
       </Grid>

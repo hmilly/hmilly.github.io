@@ -21,12 +21,14 @@ export const Head = styled.header`
   grid-auto-flow: row;
   justify-items: center;
   align-items: center;
-  
-  h1{
+
+  h1 {
     font-size: 50px;
     text-decoration: underline;
   }
-  h1, h3, p{
+  h1,
+  h3,
+  p {
     color: #bfc4ff;
     text-shadow: 3px 2px #2d2c7a;
   }
@@ -48,8 +50,10 @@ export const Grid = styled.div`
   display: grid;
   height: 100%;
   width: 90%;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  grid-template-rows: 480px;
   gap: 20px;
+  padding-bottom: 20px;
   justify-content: space-evenly;
   overflow-y: scroll;
 
@@ -58,18 +62,16 @@ export const Grid = styled.div`
   }
   ::-webkit-scrollbar {
     width: 4px;
-    color:red;
-    background-color: #792b2581;
+    background-color: #68257981;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: #79442594;
-    outline: 1px solid #79442594;
-    border-radius: 5px;
+    background-color: #ffbfff93;
+    outline: 1px solid #cf11ff;
   }
 
   a {
-    background-color: #580909bc;
-    border: solid 1px #7c1111;
+    background-color: #26003bbb;
+    border: solid 3px #350152;
     border-radius: 4px;
     text-decoration: none;
     img {
