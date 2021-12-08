@@ -23,14 +23,7 @@ export const Head = styled.header`
   align-items: center;
 
   h1 {
-    font-size: 50px;
     text-decoration: underline;
-  }
-  h1,
-  h3,
-  p {
-    color: #bfc4ff;
-    text-shadow: 3px 2px #2d2c7a;
   }
   section {
     display: grid;
@@ -50,7 +43,7 @@ export const Grid = styled.div`
   display: grid;
   height: 100%;
   width: 90%;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  grid-template-columns: repeat(auto-fit, 350px);
   grid-template-rows: 480px;
   gap: 20px;
   padding-bottom: 20px;

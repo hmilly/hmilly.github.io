@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 *{
@@ -12,6 +12,16 @@ export const GlobalStyles = createGlobalStyle`
 
 p, h1, h3{
     text-shadow: 3px 2px #632968e8;
+    color: #bfc4ff;
+}
+h1{
+    font-size: 50px;
+}
+h3{
+    font-size: 24px;
+}
+p{
+    font-size: 18px;
 }
 
 body{
@@ -20,4 +30,4 @@ body{
     background-color: black;
     overflow: hidden;
 }
-`
+`;
