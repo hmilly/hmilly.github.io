@@ -41,10 +41,10 @@ export const Head = styled.header`
 
 export const Grid = styled.div`
   display: grid;
-  height: 100%;
+  height: auto;
   width: 90%;
   grid-template-columns: repeat(auto-fit, 350px);
-  grid-template-rows: 480px;
+  grid-template-rows: 1fr;
   gap: 20px;
   padding-bottom: 20px;
   justify-content: space-evenly;
@@ -63,6 +63,11 @@ export const Grid = styled.div`
   }
 
   a {
+    display: grid;
+    max-height: 450px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    align-items: center;
     background-color: #26003bbb;
     border: solid 3px #350152;
     border-radius: 4px;
@@ -70,9 +75,6 @@ export const Grid = styled.div`
     img {
       width: 100%;
       height: auto;
-    }
-    p {
-      padding: 5px;
     }
   }
 `;
