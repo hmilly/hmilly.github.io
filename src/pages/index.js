@@ -1,18 +1,17 @@
 import * as React from "react";
-import { Link } from "gatsby"
-import { Container, Head, Grid } from "../styles/Main.styled"
-import { GlobalStyles } from "../styles/Global"
+import { Link } from "gatsby";
+import { Container, Head, Grid } from "../styles/Main.styled";
+import { GlobalStyles } from "../styles/Global";
 import GridItem from "../components/GridItem";
-import games from "../images/games.jpg"
-import menu from "../images/menu.jpg"
-import bank from "../images/bank.jpg"
+import games from "../images/games.jpg";
+import menu from "../images/menu.jpg";
+import bank from "../images/bank.jpg";
 // import weather from "../images/weather.jpg"
-import git from "../images/git.jpg"
-import lin from "../images/lin.jpg"
-
+import git from "../images/git.jpg";
+import lin from "../images/lin.jpg";
 
 const IndexPage = () => {
-  const url = "https://hmilly.github.io/"
+  const url = "https://hmilly.github.io/";
 
   return (
     <Container>
@@ -28,10 +27,7 @@ const IndexPage = () => {
             <img src={lin} alt="linkedin"></img>
           </Link>
         </section>
-        <p>
-          Welcome to my page! View my available projects below:
-        </p>
-
+        <p>Welcome to my page! View my available projects below:</p>
       </Head>
       <Grid>
         <GridItem
@@ -55,10 +51,11 @@ const IndexPage = () => {
         <GridItem
           name={"Bank app"}
           link={`${url}bank/`}
-          description={"Banking app - awaiting db upload"}
+          description={
+            "Banking app. For access - Email: user@gmail.com & Pword: user"
+          }
           image={bank}
         />
-
       </Grid>
     </Container>
   );
