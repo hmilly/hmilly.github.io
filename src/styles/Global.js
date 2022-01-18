@@ -17,7 +17,7 @@ p, h1, h3{
 h1{
     font-size: 50px;
 }
-h3{
+h2{
     font-size: 24px;
 }
 p{
