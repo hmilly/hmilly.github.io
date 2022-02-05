@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import { Container, Head, Grid } from "../styles/Main.styled";
 import { GlobalStyles } from "../styles/Global";
 import GridItem from "../components/GridItem";
@@ -7,7 +6,7 @@ import games from "../images/games.jpg";
 import menu from "../images/menu.jpg";
 import bank from "../images/bank.jpg";
 import weather from "../images/weather.jpg";
-// import weather from "../images/weather.jpg"
+import yt from "../images/yt.jpg";
 import git from "../images/git.jpg";
 import lin from "../images/lin.jpg";
 
@@ -21,12 +20,12 @@ const IndexPage = () => {
         <h1>Hmilly</h1>
         <h2>Frontend Developer</h2>
         <span>
-          <Link to="https://github.com/hmilly">
+          <a href="https://github.com/hmilly">
             <img src={git} alt="github"></img>
-          </Link>
-          <Link to="https://www.linkedin.com/in/hmilly/">
+          </a>
+          <a href="https://www.linkedin.com/in/hmilly/">
             <img src={lin} alt="linkedin"></img>
-          </Link>
+          </a>
         </span>
         <p>
           Hi! Thanks for visiting my page.
@@ -63,6 +62,12 @@ const IndexPage = () => {
           link={`${url}bank/`}
           description={"Mock banking app. For access click login!"}
           image={bank}
+        />
+        <GridItem
+          name={"YouTube clone"}
+          link={`${url}youtube_clone/`}
+          description={"Fake YouTube with data from API"}
+          image={yt}
         />
         {/* <GridItem
           name={"Text Analysis"}
