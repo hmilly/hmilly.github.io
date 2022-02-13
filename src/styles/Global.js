@@ -24,10 +24,4 @@ p{
     font-size: 18px;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    overflow: hidden;
-}
 `;
