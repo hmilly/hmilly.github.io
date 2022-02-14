@@ -1,16 +1,21 @@
 import React from "react";
 import { GlobalStyles } from "../styles/Global";
-import { LayoutBody } from "../styles/Layout.styled";
+import { Body } from "../styles/Layout.styled";
 import Nav from "./Nav";
 
 const Layout = ({ children }) => {
   return (
-    <LayoutBody>
-      <GlobalStyles />
+    <Body>
       <title>Hm Portfolio</title>
-      <Nav />
+      <GlobalStyles />
+      <header>
+        <Nav />
+      </header>
       {children}
-    </LayoutBody>
+      <footer>
+        <p>2022 Hmilly</p>
+      </footer>
+    </Body>
   );
 };
 

@@ -7,7 +7,7 @@ import lin from "../images/lin.jpg";
 const Nav = () => {
   return (
     <Navbar>
-      <ul>
+      <ul className="internal">
         <Link to="/">
           <li>Home</li>
         </Link>
@@ -17,9 +17,10 @@ const Nav = () => {
         <Link to="/about">
           <li>About</li>
         </Link>
+      </ul>
+      <ul className="external">
         <a
           href="https://github.com/hmilly"
-          className="external"
           target="_blank"
           rel="noreferrer"
         >
@@ -29,7 +30,6 @@ const Nav = () => {
         </a>
         <a
           href="https://www.linkedin.com/in/hmilly/"
-          className="external"
           target="_blank"
           rel="noreferrer"
         >

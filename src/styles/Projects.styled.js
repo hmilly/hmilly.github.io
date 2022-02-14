@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Grid = styled.div`
+export const Grid = styled.main`
   display: grid;
   margin: 10px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
