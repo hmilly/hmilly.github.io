@@ -2,10 +2,14 @@ import React from "react";
 import { About } from "../styles/About.styled";
 import Layout from "../components/Layout";
 import StackCard from "../components/StackCard";
+import Nav from "../components/Nav";
 
 const AboutPage = () => {
   return (
     <Layout>
+      <header>
+        <Nav />
+      </header>
       <About>
         <div>
           <h1>Bio:</h1>
@@ -21,7 +25,6 @@ const AboutPage = () => {
           <p>Svelte</p>
           <p>Next.js</p>
           <p>vue</p>
-          
         </div>
         <StackCard />
       </About>

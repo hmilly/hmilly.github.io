@@ -2,39 +2,43 @@ import styled from "styled-components";
 
 export const Index = styled.main`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-    "pic"
-    "icons";
-  align-items: center;
-  justify-items: center;
+  grid-template-columns: repeat(1, minmax(350px, 500px));
+  grid-template-rows: 1.5fr 200px;
   justify-content: center;
+  transition: 3s;
   .profile {
-    grid-area: pic;
-    width: 80%;
-    height: auto;
-    max-height: 450px;
-    border-radius: 50%;
-  }
-  div{
-    grid-area: icons;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    align-items: center;
+    .hidden {
+      width: 100%;
+      text-align: center;
+      h1,
+      h2 {
+        background-color: #0000008d;
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5%;
+    }
   }
 `;
 
 export const Stack = styled.div`
   display: grid;
-  justify-items: center;
-  grid-template-areas:
-    "html"
-    "js";
+
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap: 20px;
   span {
-    &:nth-child(1) {
-      grid-area: html;
-    }
-    &:nth-child(2) {
-      grid-area: js;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
     img {
       width: auto;
       max-height: 80px;

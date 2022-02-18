@@ -3,7 +3,7 @@ import html from "../images/html.jpg";
 import css from "../images/css.jpg";
 import react from "../images/react.jpg";
 import js from "../images/js.jpg";
-import {Stack} from "../styles/Index.styled"
+import { Stack } from "../styles/Index.styled";
 
 const StackCard = () => {
   return (

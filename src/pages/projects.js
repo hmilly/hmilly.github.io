@@ -8,12 +8,16 @@ import menu from "../images/menu.jpg";
 import bank from "../images/bank.jpg";
 import weather from "../images/weather.jpg";
 import yt from "../images/yt.jpg";
+import Nav from "../components/Nav";
 
 const Projects = () => {
   const url = "https://hmilly.github.io/";
 
   return (
     <Layout>
+            <header>
+        <Nav />
+      </header>
       <Grid>
         <GridItem
           name={"Menu"}
