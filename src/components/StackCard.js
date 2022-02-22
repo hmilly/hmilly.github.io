@@ -1,20 +1,17 @@
 import React from "react";
-import html from "../images/html.jpg";
-import css from "../images/css.jpg";
-import react from "../images/react.jpg";
-import js from "../images/js.jpg";
+import { StaticImage } from "gatsby-plugin-image";
 import { Stack } from "../styles/Index.styled";
 
 const StackCard = () => {
   return (
     <Stack>
       <span>
-        <img src={html} alt="html" />
-        <img src={css} alt="css" />
+        <StaticImage src="../images/stack/html.jpg" alt="html logo" />
+        <StaticImage src="../images/stack/css.jpg" alt="css logo" />
       </span>
       <span>
-        <img src={js} alt="js" />
-        <img src={react} alt="react" />
+        <StaticImage src="../images/stack/js.jpg" alt="js logo" />
+        <StaticImage src="../images/stack/react.jpg" alt="react logo" />
       </span>
     </Stack>
   );

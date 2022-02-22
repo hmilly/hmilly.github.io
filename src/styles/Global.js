@@ -23,4 +23,17 @@ p, li{
     font-size: 20px;
 }
 
+@media (max-width: 500px) {
+
+    h1{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    p, li{
+        font-size: 16px;
+    }
+}
+
 `;

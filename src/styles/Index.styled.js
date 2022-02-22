@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Index = styled.main`
   display: grid;
-  grid-template-columns: repeat(1, minmax(350px, 500px));
-  grid-template-rows: 1.5fr 200px;
+  grid-template-columns: minmax(350px, 500px);
+  grid-template-rows: 1fr 200px;
   justify-content: center;
   transition: 3s;
   .profile {
@@ -11,8 +11,10 @@ export const Index = styled.main`
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr;
     align-items: center;
-    .hidden {
+    justify-items: center;
+    section {
       width: 100%;
+      min-width: 200px;
       text-align: center;
       h1,
       h2 {
@@ -20,29 +22,46 @@ export const Index = styled.main`
       }
     }
     img {
-      width: 100%;
+      width: 85%;
+      margin: 0 auto;
       height: auto;
       border-radius: 5%;
     }
   }
 `;
 
-export const Stack = styled.div`
+export const Stack = styled.section`
   display: grid;
-
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
-  gap: 20px;
+  gap: 10px;
   span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
+    div {
+      &:hover {
+        animation: rotation 0.5s 1;
+        cursor: pointer;
+      }
+    }
     img {
       width: auto;
       max-height: 80px;
       height: 100%;
+      padding: 5px;
+    }
+    @keyframes rotation {
+      0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      }
+      100% {
+        transform: perspective(120px) rotateX(-10deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-10deg) rotateY(-360deg);
+      }
     }
   }
 `;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from "../images/c.jpg";
+import img from "../images/bg.jpg";
 
 export const Body = styled.div`
   display: grid;

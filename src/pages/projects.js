@@ -3,21 +3,13 @@ import { Grid } from "../styles/Projects.styled";
 import Layout from "../components/Layout";
 import GridItem from "../components/GridItem";
 //images
-import games from "../images/games.jpg";
-import menu from "../images/menu.jpg";
-import bank from "../images/bank.jpg";
-import weather from "../images/weather.jpg";
-import yt from "../images/yt.jpg";
-import Nav from "../components/Nav";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Projects = () => {
   const url = "https://hmilly.github.io/";
 
   return (
     <Layout>
-            <header>
-        <Nav />
-      </header>
       <Grid>
         <GridItem
           name={"Menu"}
@@ -25,13 +17,24 @@ const Projects = () => {
           description={
             "Mock food website with menu and checkout pages, made with React"
           }
-          image={menu}
+          image={
+            <StaticImage
+              src="../images/projects/menu.jpg"
+              alt="menu site thumbnail"
+            />
+          }
         />
+
         <GridItem
           name={"Game centre"}
           link={`${url}game-center/`}
           description={"Games website, created using React and TS"}
-          image={games}
+          image={
+            <StaticImage
+              src="../images/projects/games.jpg"
+              alt="games site thumbnail"
+            />
+          }
         />
         <GridItem
           name={"Weather app"}
@@ -39,19 +42,34 @@ const Projects = () => {
           description={
             "Weather app using API for locations - awaiting db upload"
           }
-          image={weather}
+          image={
+            <StaticImage
+              src="../images/projects/weather.jpg"
+              alt="weather site thumbnail"
+            />
+          }
         />
         <GridItem
           name={"Bank app"}
           link={`${url}bank/`}
           description={"Mock banking app. For access click login!"}
-          image={bank}
+          image={
+            <StaticImage
+              src="../images/projects/bank.jpg"
+              alt="bank site thumbnail"
+            />
+          }
         />
         <GridItem
           name={"YouTube clone"}
           link={`${url}youtube_clone/`}
           description={"Fake YouTube with data from API"}
-          image={yt}
+          image={
+            <StaticImage
+              src="../images/projects/yt.jpg"
+              alt="fake youtube thumbnail"
+            />
+          }
         />
         {/* <GridItem
           name={"Text Analysis"}
@@ -59,7 +77,7 @@ const Projects = () => {
           description={
             "Text analysis program used for search work finding etc."
           }
-          image={text}
+          image={<StaticImage src="../images/projects/yt.jpg" alt="fake youtube thumbnail" />}
         /> */}
       </Grid>
     </Layout>
