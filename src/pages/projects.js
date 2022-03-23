@@ -2,7 +2,6 @@ import * as React from "react";
 import { Grid } from "../styles/Projects.styled";
 import Layout from "../components/Layout";
 import GridItem from "../components/GridItem";
-//images
 import { StaticImage } from "gatsby-plugin-image";
 
 const Projects = () => {
@@ -11,6 +10,17 @@ const Projects = () => {
   return (
     <Layout>
       <Grid>
+        <GridItem
+          name={"Text Analysis"}
+          link={`${url}text-analysis/`}
+          description={"Text analysis app, for assessing a body of text."}
+          image={
+            <StaticImage
+              src="../images/projects/textAnalysis.jpg"
+              alt="text analysis thumbnail"
+            />
+          }
+        />
         <GridItem
           name={"Menu"}
           link={`${url}recipes-book/`}
@@ -21,18 +31,6 @@ const Projects = () => {
             <StaticImage
               src="../images/projects/menu.jpg"
               alt="menu site thumbnail"
-            />
-          }
-        />
-
-        <GridItem
-          name={"Game centre"}
-          link={`${url}game-center/`}
-          description={"Games website, created using React and TS"}
-          image={
-            <StaticImage
-              src="../images/projects/games.jpg"
-              alt="games site thumbnail"
             />
           }
         />
@@ -71,14 +69,17 @@ const Projects = () => {
             />
           }
         />
-        {/* <GridItem
-          name={"Text Analysis"}
-          link={`${url}text-analysis/`}
-          description={
-            "Text analysis program used for search work finding etc."
+        <GridItem
+          name={"Game centre"}
+          link={`${url}game-center/`}
+          description={"Games website, created using React and TS"}
+          image={
+            <StaticImage
+              src="../images/projects/games.jpg"
+              alt="games site thumbnail"
+            />
           }
-          image={<StaticImage src="../images/projects/yt.jpg" alt="fake youtube thumbnail" />}
-        /> */}
+        />
       </Grid>
     </Layout>
   );

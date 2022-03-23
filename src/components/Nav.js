@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Navbar } from "../styles/Layout.styled";
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image";
 
 const Nav = () => {
   return (
@@ -18,13 +18,9 @@ const Nav = () => {
         </Link>
       </ul>
       <ul className="external">
-        <a
-          href="https://github.com/hmilly"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://github.com/hmilly" target="_blank" rel="noreferrer">
           <li>
-          <StaticImage src="../images/git.jpg" alt="github icon" />
+            <StaticImage src="../images/git.jpg" alt="github icon" />
           </li>
         </a>
         <a
@@ -33,7 +29,7 @@ const Nav = () => {
           rel="noreferrer"
         >
           <li>
-          <StaticImage src="../images/in.jpg" alt="linked in icon" />
+            <StaticImage src="../images/in.jpg" alt="linked in icon" />
           </li>
         </a>
       </ul>
