@@ -13,7 +13,9 @@ const Projects = () => {
         <GridItem
           name={"Text Analysis"}
           link={`${url}text-analysis/`}
-          description={"Text analysis app, for assessing a body of text."}
+          description={
+            "Text analysis app, for assessing a body of text - made using React."
+          }
           image={
             <StaticImage
               src="../images/projects/textAnalysis.jpg"
@@ -25,7 +27,7 @@ const Projects = () => {
           name={"Menu"}
           link={`${url}recipes-book/`}
           description={
-            "Mock food website with menu and checkout pages, made with React"
+            "Mock food website with menu and checkout pages, made with React using Context"
           }
           image={
             <StaticImage
@@ -35,22 +37,20 @@ const Projects = () => {
           }
         />
         <GridItem
-          name={"Weather app"}
-          link={`${url}weather/`}
-          description={
-            "Weather app using API for locations - awaiting db upload"
-          }
+          name={"Quiz game"}
+          link={`${url}quiz/`}
+          description={"Who wants to be a Millionaire rip off - using Next.js and tailwind"}
           image={
             <StaticImage
-              src="../images/projects/weather.jpg"
-              alt="weather site thumbnail"
+              src="../images/projects/quiz.jpg"
+              alt="quiz site thumbnail"
             />
           }
         />
         <GridItem
           name={"Bank app"}
           link={`${url}bank/`}
-          description={"Mock banking app. For access click login!"}
+          description={"Mock banking app. For access click login! - made with React"}
           image={
             <StaticImage
               src="../images/projects/bank.jpg"
@@ -61,7 +61,7 @@ const Projects = () => {
         <GridItem
           name={"YouTube clone"}
           link={`${url}youtube_clone/`}
-          description={"Fake YouTube with data from API"}
+          description={"Fake YouTube with data from API - made with Gatsby"}
           image={
             <StaticImage
               src="../images/projects/yt.jpg"

@@ -23,7 +23,7 @@ export const Grid = styled.main`
   a {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-rows: 50px 1fr 80px;
     align-items: center;
     justify-items: center;
     background-color: #26003bce;
@@ -31,9 +31,12 @@ export const Grid = styled.main`
     border-radius: 4px;
     text-decoration: none;
     img {
-      width: 98%;
+      width: 95%;
       height: auto;
-      margin:0 auto;
+      margin: 0 auto;
+    }
+    p {
+      padding: 0 10px;
     }
     &:hover {
       background-color: #280355e2;
@@ -43,6 +46,5 @@ export const Grid = styled.main`
         transition: 0.5s;
       }
     }
-    
   }
 `;

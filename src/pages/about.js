@@ -17,19 +17,19 @@ const AboutPage = () => {
             few years.
           </p>
           <p>
-            I've mainly taken to working with (and around){" "}
-            <strong>React</strong>, I'm now looking to find a position which is
-            right for me, so I can be around all things tech all day long.
+            I've mainly taken to working with React, but I'm open to much more.
+            I'm now looking to find a position which is right for me, so I can
+            improve my skills and be around tech all day long.
           </p>
           <p>
-            Please feel free to view my projects, or reach out using the links
-            above.
+            Please feel free to view my projects, or if you know of any
+            openings, let me know!
           </p>
           <br></br>
           <h1>Things I want to learn more about:</h1>
           <p>Svelte</p>
-          <p>Next.js</p>
           <p>Backend development</p>
+          <p>...Everything else!</p>
         </div>
         <StackCard />
       </About>

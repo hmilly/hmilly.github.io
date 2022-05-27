@@ -38,7 +38,7 @@ module.exports = {
             sizes: `512x512`,
             type: `image/png`,
           },
-        ]
+        ],
       },
     },
   ],

@@ -12,6 +12,5 @@ export const About = styled.main`
     padding: 10px;
     border-radius: 10px;
     background-color: black;
-    /* overflow-y: scroll; */
   }
 `;
