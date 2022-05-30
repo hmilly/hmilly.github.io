@@ -5,14 +5,14 @@ import GridItem from "../components/GridItem";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Projects = () => {
-  const url = "https://hmilly.github.io/";
+  const ghUrl = "https://hmilly.github.io/";
 
   return (
     <Layout>
       <Grid>
         <GridItem
           name={"Text Analysis"}
-          link={`${url}text-analysis/`}
+          link={`${ghUrl}text-analysis/`}
           description={
             "Text analysis app, for assessing a body of text - made using React."
           }
@@ -25,7 +25,7 @@ const Projects = () => {
         />
         <GridItem
           name={"Menu"}
-          link={`${url}recipes-book/`}
+          link={`${ghUrl}recipes-book/`}
           description={
             "Mock food website with menu and checkout pages, made with React using Context"
           }
@@ -38,8 +38,10 @@ const Projects = () => {
         />
         <GridItem
           name={"Quiz game"}
-          link={`${url}quiz/`}
-          description={"Who wants to be a Millionaire rip off - using Next.js and tailwind"}
+          link={`https://quiz-omega-gold.vercel.app/`}
+          description={
+            "Who wants to be a Millionaire rip off - using Next.js and tailwind"
+          }
           image={
             <StaticImage
               src="../images/projects/quiz.jpg"
@@ -49,8 +51,10 @@ const Projects = () => {
         />
         <GridItem
           name={"Bank app"}
-          link={`${url}bank/`}
-          description={"Mock banking app. For access click login! - made with React"}
+          link={`${ghUrl}bank/`}
+          description={
+            "Mock banking app. For access click login! - made with React"
+          }
           image={
             <StaticImage
               src="../images/projects/bank.jpg"
@@ -60,7 +64,7 @@ const Projects = () => {
         />
         <GridItem
           name={"YouTube clone"}
-          link={`${url}youtube_clone/`}
+          link={`${ghUrl}youtube_clone/`}
           description={"Fake YouTube with data from API - made with Gatsby"}
           image={
             <StaticImage
@@ -71,7 +75,7 @@ const Projects = () => {
         />
         <GridItem
           name={"Game centre"}
-          link={`${url}game-center/`}
+          link={`${ghUrl}game-center/`}
           description={"Games website, created using React and TS"}
           image={
             <StaticImage
