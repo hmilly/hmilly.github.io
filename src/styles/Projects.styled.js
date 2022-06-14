@@ -32,6 +32,7 @@ export const Grid = styled.main`
     text-decoration: none;
     img {
       width: 95%;
+      max-height: 500px;
       height: auto;
       margin: 0 auto;
     }
