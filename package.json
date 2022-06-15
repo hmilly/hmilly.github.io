@@ -16,17 +16,17 @@
     "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
-    "async-cache": "^1.1.0",
     "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "^4.2.0",
     "gatsby-plugin-image": "^2.2.0",
     "gatsby-plugin-manifest": "^4.7.0",
-    "gatsby-plugin-sharp": "^4.2.0",
+    "gatsby-plugin-sharp": "^4.16.1",
     "gatsby-plugin-styled-components": "^5.2.0",
-    "gatsby-source-filesystem": "^4.2.0",
-    "gatsby-transformer-sharp": "^4.2.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "gatsby-source-filesystem": "^4.16.0",
+    "gatsby-transformer-remark": "^5.16.0",
+    "gatsby-transformer-sharp": "^4.16.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {

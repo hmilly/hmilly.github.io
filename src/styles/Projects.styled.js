@@ -23,26 +23,23 @@ export const Grid = styled.main`
   a {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 80px;
-    align-items: center;
-    justify-items: center;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    gap: 10px;
+    align-content: space-evenly;
     background-color: #26003bce;
     border: solid 3px #350152;
     border-radius: 4px;
     text-decoration: none;
-    img {
+    text-align: center;
+    div {
       width: 95%;
-      max-height: 500px;
-      height: auto;
       margin: 0 auto;
     }
-    p {
-      padding: 0 10px;
-    }
+
     &:hover {
       background-color: #280355e2;
       border: solid 3px #014d52;
-      img {
+      div {
         padding: 5px;
         transition: 0.5s;
       }
