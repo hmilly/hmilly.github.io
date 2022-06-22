@@ -25,6 +25,7 @@ export const Grid = styled.main`
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     gap: 10px;
+    padding: 10px;
     align-content: space-between;
     background-color: #26003bce;
     border: solid 3px #350152;
@@ -35,12 +36,10 @@ export const Grid = styled.main`
       align-self: center;
       width: 95%;
       margin: 0 auto;
-    }
-    &:hover {
-      background-color: #280355e2;
-      border: solid 3px #014d52;
-      padding: 5px;
-      transition: 0.5s;
+      &:hover {
+        padding: 5px;
+        transition: 0.5s;
+      }
     }
   }
 `;
