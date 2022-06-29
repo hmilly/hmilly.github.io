@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Grid = styled.main`
   display: grid;
-  margin: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
-  grid-template-rows: repeat(auto-fit, minmax(auto, 550px));
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
   gap: 20px;
   justify-content: space-evenly;
   overflow-y: scroll;
@@ -23,26 +23,20 @@ export const Grid = styled.main`
   a {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 80px;
-    align-items: center;
-    justify-items: center;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    padding: 10px;
+    align-content: space-between;
     background-color: #26003bce;
     border: solid 3px #350152;
     border-radius: 4px;
     text-decoration: none;
-    img {
+    text-align: center;
+    section {
+      align-self: center;
       width: 95%;
-      max-height: 500px;
-      height: auto;
       margin: 0 auto;
-    }
-    p {
-      padding: 0 10px;
-    }
-    &:hover {
-      background-color: #280355e2;
-      border: solid 3px #014d52;
-      img {
+      &:hover {
         padding: 5px;
         transition: 0.5s;
       }
