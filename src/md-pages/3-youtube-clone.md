@@ -1,7 +1,8 @@
 ---
-name: "YouTube clone"
 slug: "projects"
-link: "https://hmilly.github.io/youtube_clone/"
-description:  "Fake YouTube with data from API - made with Gatsby"
+website: "https://hmilly.github.io/youtube_clone/"
+code: "https://github.com/hmilly/youtube_clone/"
+title: "Fake YouTube with data from API"
+description:  "Made with Gatsby"
 featuredImage: ../images/projects/youtubeClone.jpg
 ---

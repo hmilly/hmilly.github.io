@@ -11,6 +11,18 @@ export const Body = styled.div`
   gap: 10px;
   background-image: url(${img});
   background-position: center;
+  overflow-y: scroll;
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(34, 1, 77, 0.3);
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+    background-color: #68257981;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #ffbfff93;
+    outline: 1px solid #cf11ff;
+  }
   footer {
     background-color: #000000a2;
     justify-self: end;
@@ -19,32 +31,35 @@ export const Body = styled.div`
 `;
 
 export const Navbar = styled.nav`
-  background-color: #000000b5;
+  background-color: black;
   display: grid;
-  grid-template-columns: minmax(200px, 600px) minmax(75px, 250px);
+  grid-template-columns: minmax(auto, 600px) minmax(auto, 300px);
   grid-template-rows: 50px;
+  gap: 20px;
   justify-content: space-between;
-
   ul.internal {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px;
   }
   ul.external {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px;
     img {
-      height: 50px;
-      width: 50px;
+      width: 100%;
+      max-height: 50px;
     }
   }
   ul {
     display: grid;
-    grid-template-rows: 50px;
     list-style: none;
     gap: 10px;
     text-align: center;
     a {
-      display: grid;
-      align-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-decoration: none;
+
       &:hover {
         background: #80008096;
         transition: 0.2s;

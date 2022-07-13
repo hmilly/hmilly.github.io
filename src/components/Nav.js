@@ -7,13 +7,13 @@ const Nav = () => {
   return (
     <Navbar>
       <ul className="internal">
-        <Link to="/">
+        <Link to="/"  activeClassName="active">
           <li>Home</li>
         </Link>
-        <Link to="/projects">
+        <Link to="/projects"  activeClassName="active">
           <li>Projects</li>
         </Link>
-        <Link to="/about">
+        <Link to="/about"  activeClassName="active">
           <li>About</li>
         </Link>
       </ul>

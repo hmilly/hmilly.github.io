@@ -11,9 +11,11 @@ const Projects = () => {
         edges {
           node {
             frontmatter {
-              name
               slug
-              link
+              title
+              subtitle
+              website
+              code
               description
               featuredImage {
                 childImageSharp {
@@ -31,14 +33,11 @@ const Projects = () => {
     <Layout>
       <Grid>
         {data.allMarkdownRemark.edges.map((edge, i) => (
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href={edge.node.frontmatter.link}
-            key={i}
-          >
-            <h2>{edge.node.frontmatter.name}</h2>
-            <section>
+          <div>
+            <header>
+              <h2>{edge.node.frontmatter.title}</h2>
+            </header>
+            <span>
               <GatsbyImage
                 image={
                   edge.node.frontmatter.featuredImage.childImageSharp
@@ -46,9 +45,35 @@ const Projects = () => {
                 }
                 alt=""
               />
+            </span>
+            <section>
+              <p>{edge.node.frontmatter.description}</p>
+              <button
+                onClick={() =>
+                  window.open(
+                    edge.node.frontmatter.website,
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+                key={i}
+              >
+                Website
+              </button>
+              <button
+                onClick={() =>
+                  window.open(
+                    edge.node.frontmatter.code,
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+                key={i}
+              >
+                Source code
+              </button>
             </section>
-            <p>{edge.node.frontmatter.description}</p>
-          </a>
+          </div>
         ))}
       </Grid>
     </Layout>

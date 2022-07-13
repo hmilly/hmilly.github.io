@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Index = styled.main`
   display: grid;
-  grid-template-columns: minmax(350px, 500px);
+  grid-template-columns: minmax(280px, 500px);
   grid-template-rows: 1fr 200px;
   justify-content: center;
   transition: 3s;
@@ -26,6 +26,7 @@ export const Index = styled.main`
       margin: 0 auto;
       height: auto;
       border-radius: 5%;
+      cursor: pointer;
     }
   }
 `;
@@ -35,7 +36,7 @@ export const Stack = styled.section`
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
   gap: 10px;
-  span {
+  a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -60,7 +61,7 @@ export const Stack = styled.section`
       }
       100% {
         transform: perspective(120px) rotateX(-10deg) rotateY(0deg);
-        -webkit-transform: perspective(120px) rotateX(-10deg) rotateY(-360deg);
+        -webkit-transform: perspective(120px) rotateX(-10deg) rotateY(-180deg);
       }
     }
   }
