@@ -14,7 +14,7 @@ const IndexPage = () => {
             <h1>Holly / Hmilly</h1>
             <h2>Frontend Developer</h2>
           </section>
-          <Link to="projects"  activeStyle={{ color: "red" }}>
+          <Link to="projects">
             <StaticImage src="../images/profile.jpg" alt="profile" />
           </Link>
         </div>

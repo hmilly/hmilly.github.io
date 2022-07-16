@@ -12,10 +12,10 @@ const Projects = () => {
           node {
             frontmatter {
               slug
-              title
-              subtitle
               website
               code
+              title
+              comments
               description
               featuredImage {
                 childImageSharp {
@@ -47,6 +47,7 @@ const Projects = () => {
               />
             </span>
             <section>
+              <p>{edge.node.frontmatter.comments}</p>
               <p>{edge.node.frontmatter.description}</p>
               <button
                 onClick={() =>
