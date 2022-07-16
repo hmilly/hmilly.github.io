@@ -3,17 +3,18 @@ import { Link } from "gatsby";
 import { Navbar } from "../styles/Layout.styled";
 import { StaticImage } from "gatsby-plugin-image";
 
+
 const Nav = () => {
   return (
     <Navbar>
       <ul className="internal">
-        <Link to="/"  activeClassName="active">
+        <Link to="/"  activeClassName="current">
           <li>Home</li>
         </Link>
-        <Link to="/projects"  activeClassName="active">
+        <Link to="/projects"  activeClassName="current">
           <li>Projects</li>
         </Link>
-        <Link to="/about"  activeClassName="active">
+        <Link to="/about"  activeClassName="current">
           <li>About</li>
         </Link>
       </ul>

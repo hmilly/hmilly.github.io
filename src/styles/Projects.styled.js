@@ -7,30 +7,33 @@ export const Grid = styled.main`
   grid-template-rows: auto;
   gap: 20px;
   justify-content: space-evenly;
-
   div {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
-    gap: 10px;
-    padding: 10px;
     align-content: space-between;
-    background-color: #26003bce;
+    background-color: #26003be2;
     border: solid 3px #350152;
     border-radius: 4px;
     text-decoration: none;
+    padding: 10px;
     text-align: center;
+    header {
+      padding: 10px 0;
+    }
     span {
       align-self: center;
-      width: 95%;
       margin: 0 auto;
+      padding: 0 5px;
     }
     section {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr auto;
+      width: 100%;
       gap: 10px;
       p {
+        padding: 10px 0;
         grid-column-start: 1;
         grid-column-end: 3;
       }

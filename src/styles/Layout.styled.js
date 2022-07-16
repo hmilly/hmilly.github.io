@@ -59,7 +59,6 @@ export const Navbar = styled.nav`
       align-items: center;
       justify-content: center;
       text-decoration: none;
-
       &:hover {
         background: #80008096;
         transition: 0.2s;
@@ -68,6 +67,11 @@ export const Navbar = styled.nav`
           transition: 0.2s;
         }
       }
+    }
+    .current {
+      background: #3e096e;
+      letter-spacing: 2px;
+      transition: 0.2s;
     }
   }
 `;

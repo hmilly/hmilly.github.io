@@ -61,7 +61,7 @@ export const Stack = styled.section`
       }
       100% {
         transform: perspective(120px) rotateX(-10deg) rotateY(0deg);
-        -webkit-transform: perspective(120px) rotateX(-10deg) rotateY(-180deg);
+        -webkit-transform: perspective(120px) rotateX(-10deg) rotateY(-360deg);
       }
     }
   }

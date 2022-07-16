@@ -11,7 +11,9 @@ export const About = styled.main`
   .about {
     display: flex;
     flex-direction: column;
-    border: solid violet 5px;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to bottom, #8d1e7e, #ac9df1);
     gap: 20px;
     padding: 10px;
     border-radius: 10px;
