@@ -11,7 +11,7 @@ export const Grid = styled.main`
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
-    align-content: space-between;
+    align-self: start;
     background-color: #26003be2;
     border: solid 3px #350152;
     border-radius: 4px;
@@ -33,7 +33,7 @@ export const Grid = styled.main`
       width: 100%;
       gap: 10px;
       p {
-        padding: 10px 0;
+        padding: 10px;
         grid-column-start: 1;
         grid-column-end: 3;
       }

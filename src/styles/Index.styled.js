@@ -12,14 +12,12 @@ export const Index = styled.main`
     grid-template-rows: 100px 1fr;
     align-items: center;
     justify-items: center;
-    section {
+    section,
+    p {
       width: 100%;
       min-width: 200px;
       text-align: center;
-      h1,
-      h2 {
-        background-color: #0000008d;
-      }
+      background-color: #0000008d;
     }
     img {
       width: 85%;

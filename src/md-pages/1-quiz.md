@@ -2,8 +2,8 @@
 slug: "projects"
 website: "https://quiz-omega-gold.vercel.app/"
 code: "https://github.com/hmilly/quiz/"
-title:  "Who wants to be a Millionaire esque app made with Next.js and tailwind"
-comments: "I used next.js and tailwind for this app to learn more about them. Later, i'd like to improve the helper buttons and implement 'ask the audience' etc."
-description:  "I made this for a friend of mine as he really enjoys quizing. There is an internal database of questions, and I wanted to make it so more sets can be added by a non technical user. Then it can cycle through the different sets of questions to give the user a different ranges like the game show does."
+title:  "Who wants to be a Millionaire app"
+description: "I created this app with Next.JS and Tailwind. There is an internal database of questions which is suited to a non-technical user, as they just follow the database formatting to input their own range of questions."
+comments:  "I learned Tailwind making this app. Later I’d like to improve the functionality of the helper buttons and implement other options like the real game does."
 featuredImage: ../images/projects/quiz.jpg
 ---

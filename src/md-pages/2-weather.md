@@ -2,8 +2,8 @@
 slug: "projects"
 website: "https://hmilly.github.io/weather/"
 code: "https://github.com/hmilly/weather/"
-title: "Weather app that calls data from an API made with React, Typescript and SASS "
-comments: "This is a simple weather app I made for someone. I used typescript with React to learn more about how they work with each other. I also used SASS as I really enjoy the readability and cleanliness of it"
-description:  "Further along, i'd like to make this site more complex in terms of what data is shown, as there is much more from the API. I struggled intially to keep the personal API key hidden but vercel helps greatly with this"
+title: "Weather app"
+description: "This is a React based app that uses Typescript, SASS and utilises open source APIs. The user enters a city name using a location API, selects it from the dropdown, then detailed weather info is displayed from the weather API."
+comments: "I used TS with React to learn more about how they work with each other. I chose SASS to style as I really enjoy the readability and cleanliness of it."
 featuredImage: ../images/projects/weather.jpg
 ---

@@ -17,6 +17,12 @@ const IndexPage = () => {
           <Link to="projects">
             <StaticImage src="../images/profile.jpg" alt="profile" />
           </Link>
+          <p>
+              I'm an enthusiastic and skilled web developer who also possesses a
+              wealth of transferable skills and a passion for digital
+              innovation. I’m currently seeking my first commercial role within
+              the frontend development field.
+            </p>
         </div>
         <StackCard />
       </Index>

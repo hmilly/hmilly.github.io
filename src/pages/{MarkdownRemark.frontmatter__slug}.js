@@ -47,8 +47,8 @@ const Projects = () => {
               />
             </span>
             <section>
-              <p>{edge.node.frontmatter.comments}</p>
               <p>{edge.node.frontmatter.description}</p>
+              <p>{edge.node.frontmatter.comments}</p>
               <button
                 onClick={() =>
                   window.open(
