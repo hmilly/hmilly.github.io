@@ -13,6 +13,7 @@ const Projects = () => {
             frontmatter {
               slug
               website
+              link
               code
               title
               comments
@@ -47,7 +48,24 @@ const Projects = () => {
               />
             </span>
             <section>
-              <p>{edge.node.frontmatter.description}</p>
+              <p>
+                {edge.node.frontmatter.description}
+                {edge.node.frontmatter.link && (
+                  <button
+                    className="nostyle_btn"
+                    onClick={() =>
+                      window.open(
+                        edge.node.frontmatter.link,
+                        "_blank",
+                        "noopener,noreferrer"
+                      )
+                    }
+                    key={i}
+                  >
+                    This wireframe
+                  </button>
+               )}.
+              </p>
               <p>{edge.node.frontmatter.comments}</p>
               <button
                 onClick={() =>

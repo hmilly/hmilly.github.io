@@ -50,6 +50,12 @@ export const Grid = styled.main`
           transition: 0.1s;
         }
       }
+      .nostyle_btn{
+        border: none;
+        color: #eebde7;
+        height: auto;
+
+      }
     }
   }
 `;
