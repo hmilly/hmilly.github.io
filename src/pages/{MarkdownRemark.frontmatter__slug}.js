@@ -62,9 +62,10 @@ const Projects = () => {
                     }
                     key={i}
                   >
-                    This wireframe
+                    this wireframe
                   </button>
-               )}.
+                )}
+                .
               </p>
               <p>{edge.node.frontmatter.comments}</p>
               <button
