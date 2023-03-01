@@ -34,7 +34,7 @@ const Projects = () => {
     <Layout>
       <Grid>
         {data.allMarkdownRemark.edges.map((edge, i) => (
-          <div>
+          <div key={i}>
             <header>
               <h2>{edge.node.frontmatter.title}</h2>
             </header>
@@ -44,7 +44,7 @@ const Projects = () => {
                   edge.node.frontmatter.featuredImage.childImageSharp
                     .gatsbyImageData
                 }
-                alt=""
+                alt={edge.node.frontmatter.title}
               />
             </span>
             <section>
@@ -60,7 +60,6 @@ const Projects = () => {
                         "noopener,noreferrer"
                       )
                     }
-                    key={i}
                   >
                     this wireframe
                   </button>
@@ -76,7 +75,6 @@ const Projects = () => {
                     "noopener,noreferrer"
                   )
                 }
-                key={i}
               >
                 Website
               </button>
@@ -88,7 +86,6 @@ const Projects = () => {
                     "noopener,noreferrer"
                   )
                 }
-                key={i}
               >
                 Source code
               </button>
